@@ -1,0 +1,29 @@
+{
+  "name": "BicoccaDownloadTool",
+  "repository": {
+    "type": "git"
+  },
+  "bin": {
+    "BicoccaDownloadTool": "./bicoccadownloadtool.js"
+  },
+  "version": "1.1.0",
+  "description": "",
+  "main": "bicoccadownloadtool.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ffmpeg-progressbar-cli": "^1.5.0",
+    "firefox": "0.0.1",
+    "keytar": "^6.0.1",
+    "m3u8-parser": "^4.4.0",
+    "node-notifier": "^7.0.1",
+    "puppeteer": "^5.5.0",
+    "request": "^2.88.2",
+    "terminal-kit": "^1.26.10",
+    "yargs": "^15.4.1"
+  },
+  "pkg": {
+    "assets": "node_modules/terminal-kit/**/*"
+  }
+}
