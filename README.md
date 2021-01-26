@@ -8,7 +8,7 @@ Basta scaricare il programma precompilato da questo link "https://mega.nz/file/I
 Nella cartella "eseguibile" sono presenti tutti i file necessari (nascosti) e non serve installare nient'altro.
 Da terminale il comando da utilizzare è del tipo:
 ```
-node bicoccadownloadtool.exe -u "m.rossi4" -v "https://elearning.unimib.it/mod/kalvidres/view.php?id=588258"
+bicoccadownloadtool.exe -u "m.rossi4" -p "PASSWORD" -k -v "https://elearning.unimib.it/mod/kalvidres/view.php?id=588258"
 ```
 
 ## Possibilità 2: codice sorgente
@@ -53,14 +53,14 @@ npm install
 
 Utilizzo standard
 ```
-$ node bicoccadownloadtool.exe --username CODICEPERSONA --videoUrls "http://elearning.it/.../index.php?id=44292"
+$ bicoccadownloadtool.exe --username CODICEPERSONA --videoUrls "http://elearning.it/.../index.php?id=44292"
 
-$ node bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292"
+$ bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292"
 ```
 
 Comando per visualizzare tutte le opzioni:
 ```
-$ node bicoccadownloadtool.exe -h
+$ bicoccadownloadtool.exe -h
 
 Options:
   --version              Show version number                           [boolean]
@@ -75,23 +75,23 @@ Options:
 
 Download di più video:
 ```
-$ node bicoccadownloadtool.exe -u CODICEPERSONA
+$ bicoccadownloadtool.exe -u CODICEPERSONA
     -v "http://elearning.it/.../index.php?id=44292" "http://elearning.it/.../index.php?id=2341"
 
 ```
 Da file di testo (un link per riga):
 ```
-$ node bicoccadownloadtool.exe -u CODICEPERSONA -f "links.txt"
+$ bicoccadownloadtool.exe -u CODICEPERSONA -f "links.txt"
 ```
 
 Cambia la password salvata
 ```
-$ node bicoccadownloadtool.exe -u CODICEPERSONA -p MYNEWPASSWORD -v "http://elearning.it/.../index.php?id=44292"
+$ bicoccadownloadtool.exe -u CODICEPERSONA -p MYNEWPASSWORD -v "http://elearning.it/.../index.php?id=44292"
 ```
 
 Non salvare la password, verrà richiesta in automatico:
 ```
-$ node bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292" -k
+$ bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292" -k
 ```
 
 ## Utilizzo dello script
@@ -106,7 +106,7 @@ set codice_persona=m.rossi4
 set urls_file_path="links.txt"
 set password_set="12334"
 
-node bicoccadownloadtool.exe -u %codice_persona% -f %urls_file_path% -k -p %password_set%
+bicoccadownloadtool.exe -u %codice_persona% -f %urls_file_path% -k -p %password_set%
 
 @pause
 ```
