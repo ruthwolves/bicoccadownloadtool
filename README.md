@@ -4,11 +4,11 @@ Progetto basato sul codice di Polidown https://github.com/sup3rgiu
 
 ## Possibilità 1: eseguibile
 
-Basta scaricare il programma precompilato da questo link "----".
+Basta scaricare il programma precompilato da questo link "https://mega.nz/file/gfxgjLQJ#Uo2YN0w9IiAMWC_oiwICYt8M3Y9gJxjlrqzUzr-Rzs0".
 Nella cartella "eseguibile" sono presenti tutti i file necessari (nascosti) e non serve installare nient'altro.
 Da terminale il comando da utilizzare è del tipo:
 ```
-node bicoccadownloadtool.exe -u "m.rossi4" -v "http://...../index.php?=id=44292"
+node bicoccadownloadtool.exe -u "m.rossi4" -v "https://elearning.unimib.it/mod/kalvidres/view.php?id=588258"
 ```
 
 ## Possibilità 2: codice sorgente
@@ -25,7 +25,7 @@ Scarica pure e modifica il codice, avrai bisogno di una serie di prerequisiti.
 ### Installazione
 * Scarica i 4 programmi necessari al funzionamento
 * Scarica la cartella col codice sorgente
-* Scarica (da riga di comando) tutti i modulo node.js necessari
+* Scarica (da riga di comando) tutti i moduli node.js necessari
 ```
 npm install
 ```
@@ -52,14 +52,14 @@ npm install
 
 Utilizzo standard
 ```
-$ node bicoccadownloadtool.js --username CODICEPERSONA --videoUrls "http://elearning.it/.../index.php?id=44292"
+$ node bicoccadownloadtool.exe --username CODICEPERSONA --videoUrls "http://elearning.it/.../index.php?id=44292"
 
-$ node bicoccadownloadtool.js -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292"
+$ node bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292"
 ```
 
 Comando per visualizzare tutte le opzioni:
 ```
-$ node bicoccadownloadtool.js -h
+$ node bicoccadownloadtool.exe -h
 
 Options:
   --version              Show version number                           [boolean]
@@ -74,23 +74,23 @@ Options:
 
 Download di più video:
 ```
-$ node bicoccadownloadtool.js -u CODICEPERSONA
+$ node bicoccadownloadtool.exe -u CODICEPERSONA
     -v "http://elearning.it/.../index.php?id=44292" "http://elearning.it/.../index.php?id=2341"
 
 ```
 Da file di testo (un link per riga):
 ```
-$ node bicoccadownloadtool.js -u CODICEPERSONA -f "links.txt"
+$ node bicoccadownloadtool.exe -u CODICEPERSONA -f "links.txt"
 ```
 
 Cambia la password salvata
 ```
-$ node bicoccadownloadtool.js -u CODICEPERSONA -p MYNEWPASSWORD -v "http://elearning.it/.../index.php?id=44292"
+$ node bicoccadownloadtool.exe -u CODICEPERSONA -p MYNEWPASSWORD -v "http://elearning.it/.../index.php?id=44292"
 ```
 
 Non salvare la password, verrà richiesta in automatico:
 ```
-$ node bicoccadownloadtool.js -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292" -k
+$ node bicoccadownloadtool.exe -u CODICEPERSONA -v "http://elearning.it/.../index.php?id=44292" -k
 ```
 
 ## Utilizzo dello script
@@ -104,7 +104,7 @@ Esempio:
 set codice_persona=m.rossi4
 set urls_file_path="links.txt"
 
-node bicoccadownloadtool.js -u %codice_persona% -f %urls_file_path%
+node bicoccadownloadtool.exe -u %codice_persona% -f %urls_file_path%
 
 @echo Press any key to terminate . . .
 @pause >nul
