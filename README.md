@@ -1,10 +1,10 @@
 # BicoccaDownloadTool
 
-Progetto basato sul codice di Polidown https://github.com/sup3rgiu
+*Progetto basato sul codice di Polidown https://github.com/sup3rgiu*
 
 ## Possibilità 1: eseguibile
 
-Basta scaricare il programma precompilato da questo link "https://mega.nz/file/gfxgjLQJ#Uo2YN0w9IiAMWC_oiwICYt8M3Y9gJxjlrqzUzr-Rzs0".
+Basta scaricare il programma precompilato da questo link "https://mega.nz/file/IHpi3BRL#sMt6IwwGoc6mkiEpV-QQxYiOhiTpTrcVmCi6Xg_7x5c".
 Nella cartella "eseguibile" sono presenti tutti i file necessari (nascosti) e non serve installare nient'altro.
 Da terminale il comando da utilizzare è del tipo:
 ```
@@ -42,6 +42,7 @@ npm install
 * Tipologia di link: il link deve condurre precisamente a una pagina del tipo in figura.
 * Titoli ripetuti: il programma nomina i file col titolo con cui è stato caricato su elearning, se più video hanno lo stesso nome verranno sovrascritti.
   Attenzione dunque: se non siete certi di quale sia il titolo forse è meglio scaricare un video per volta.
+* Keytar (il modulo che salva la password) funziona solo se si ha installato X11. Se dà problemi basta usare -k per forzare il non utilizzo di keytar e -p "password".
 * Può darsi che non tutti i moduli siano installati correttamente, se vedi qualcosa tipo "puppeteer module not found" puoi provare a risolvere con
   "npm i puppeteer". In ogni caso google ha la risposta.
 * Il programma è probabilmente pieno di bug. Se trovi qualcosa fammelo sapere!
@@ -65,7 +66,7 @@ Options:
   --version              Show version number                           [boolean]
   -v, --videoUrls                                             [array] [required]
   -f, --videoUrlsFile    Path to txt file containing the URLs (one URL for each line) [string]
-  -u, --username         Codice Persona PoliMi               [string] [required]
+  -u, --username         Codice Persona                      [string] [required]
   -p, --password                                                        [string]
   -k, --noKeyring        Do not use system keyring    [boolean] [default: false]
   -t, --noToastNotification  Disable notifications    [boolean] [default: false]
@@ -103,9 +104,9 @@ Esempio:
 
 set codice_persona=m.rossi4
 set urls_file_path="links.txt"
+set password_set="12334"
 
-node bicoccadownloadtool.exe -u %codice_persona% -f %urls_file_path%
+node bicoccadownloadtool.exe -u %codice_persona% -f %urls_file_path% -k -p %password_set%
 
-@echo Press any key to terminate . . .
-@pause >nul
+@pause
 ```
