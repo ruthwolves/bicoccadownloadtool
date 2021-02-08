@@ -4,9 +4,10 @@
 
 ## Possibilità 1: eseguibile
 
-Basta scaricare il programma precompilato da questo link "https://mega.nz/file/IHpi3BRL#sMt6IwwGoc6mkiEpV-QQxYiOhiTpTrcVmCi6Xg_7x5c".
+Basta scaricare il programma precompilato da questo link "https://mega.nz/file/RW53zaBS#wAvVJrRKKr6Z0W8YaXX0NPhwHEWTJzSd2mJe1-TgrQk".
 Nella cartella "eseguibile" sono presenti tutti i file necessari (nascosti) e non serve installare nient'altro.
-Da terminale il comando da utilizzare è del tipo:
+Il metodo di utilizzo più semplice è quello spiegato nell'ultimo punto (utilizzo dello sript)
+Da terminale (cerca cmd sul tuo pc) il comando da utilizzare è del tipo:
 ```
 bicoccadownloadtool.exe -u "m.rossi4" -p "PASSWORD" -k -v "https://elearning.unimib.it/mod/kalvidres/view.php?id=588258"
 ```
